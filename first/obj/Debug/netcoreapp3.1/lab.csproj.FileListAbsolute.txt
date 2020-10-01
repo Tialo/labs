@@ -1,0 +1,39 @@
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.csprojAssemblyReference.cache
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.AssemblyInfoInputs.cache
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.AssemblyInfo.cs
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.exe
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.deps.json
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.runtimeconfig.json
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.runtimeconfig.dev.json
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Рабочий стол\c#\lab\bin\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Рабочий стол\c#\lab\obj\Debug\netcoreapp3.1\lab.genruntimeconfig.cache
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.exe
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.deps.json
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.runtimeconfig.json
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.runtimeconfig.dev.json
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Рабочий стол\c#\labs\first\bin\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.csprojAssemblyReference.cache
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.AssemblyInfoInputs.cache
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.AssemblyInfo.cs
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Рабочий стол\c#\labs\first\obj\Debug\netcoreapp3.1\lab.genruntimeconfig.cache
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.exe
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.deps.json
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.runtimeconfig.json
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.runtimeconfig.dev.json
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Desktop\c#\labs\first\bin\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.csprojAssemblyReference.cache
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.AssemblyInfoInputs.cache
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.AssemblyInfo.cs
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.dll
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.pdb
+C:\Users\tialo\Desktop\c#\labs\first\obj\Debug\netcoreapp3.1\lab.genruntimeconfig.cache

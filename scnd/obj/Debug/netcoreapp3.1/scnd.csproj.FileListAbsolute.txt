@@ -1,0 +1,26 @@
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.csprojAssemblyReference.cache
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.AssemblyInfoInputs.cache
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.AssemblyInfo.cs
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.exe
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.deps.json
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.runtimeconfig.json
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.runtimeconfig.dev.json
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.dll
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.pdb
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.dll
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.pdb
+C:\Users\tialo\Рабочий стол\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.genruntimeconfig.cache
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.csprojAssemblyReference.cache
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.AssemblyInfoInputs.cache
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.AssemblyInfo.cs
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.dll
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.pdb
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.exe
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.deps.json
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.runtimeconfig.json
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.runtimeconfig.dev.json
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.dll
+C:\Users\tialo\Desktop\c#\labs\scnd\bin\Debug\netcoreapp3.1\scnd.pdb
+C:\Users\tialo\Desktop\c#\labs\scnd\obj\Debug\netcoreapp3.1\scnd.genruntimeconfig.cache
