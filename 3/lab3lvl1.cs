@@ -37,11 +37,10 @@ class Level1
     public static void T6()
     {
         WriteLine("Level1 Test6:");
-		double[] vector = new double[5];
+		double[] vector = new double[5] {2, 12, 124, 543, 4};
 		double s = 0;
 		for (int i = 0; i <= 4; i++)
 		{
-			vector[i] = ToDouble(ReadLine());
 			s += vector[i] * vector[i];
 		}
         WriteLine(Sqrt(s));
@@ -69,12 +68,11 @@ class Level1
         WriteLine("Level1 Test10:");
 		int c = 0;
 		double P, Q;
-		double[] a = new double[10];
+		double[] a = new double[10] {1, 42, 51, 12, 45, 523, 1, 54, 35, 1};
 		P = ToDouble(ReadLine());
 		Q = ToDouble(ReadLine());
 		for (int i = 0; i <= 9; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] > P && a[i] < Q)
 				c++;
 		}
@@ -83,11 +81,10 @@ class Level1
     public static void T11()
     {
         WriteLine("Level1 Test11:");
-		double[] a = new double[10];
+		double[] a = new double[10] {-2, 4, 52, -5, 12, 5, -1, 42, -10, 5};
 		int c = 0, i = 0;
 		for (; i <= 9; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] > 0)
 				c++;
 		}
@@ -106,11 +103,10 @@ class Level1
     public static void T12()
     {
         WriteLine("Level1 Test12:");
-		double[] a = new double[8];
+		double[] a = new double[8] {2, 3, -4 , 121, -19, 2, -8, 21};
 		int c = 0;
 		for (int i = 0; i < 8; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] < 0)
 				c = i;
 		}
@@ -120,20 +116,16 @@ class Level1
     {
         WriteLine("Level1 Test13:");
 		int i = 0;
-		double[] a = new double[10], b = new double[5], c = new double[5];
-		for (i = 0; i < 10; i++)
-		{
-			if (i % 2 == 0)
-				b[i / 2] = ToDouble(ReadLine());
-			else
-				c[i / 2] = ToDouble(ReadLine());
-		}
+		double[] a = new double[10] {1, 2, 3, 4, 5, 6, 7, 8, 19, 2}, b = new double[5], c = new double[5];
 		for (i = 0; i < 5; i++)
 		{
+			b[i] = a[i * 2];
 			WriteLine(b[i]);
 		}
+		WriteLine("==");
 		for (i = 0; i < 5; i++)
 		{
+			c[i] = a[i * 2 + 1];
 			WriteLine(c[i]);
 		}
         WriteLine();

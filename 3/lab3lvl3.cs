@@ -6,12 +6,10 @@ class Level3
     public static void T1()
     {
         WriteLine("Level3 Test1:");
-		int n, i, max_i = 0, k = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n];
-		for (i = 0; i < n; i++)
+		int i, max_i = 0, k = 0;
+		double[] a = new double[7], b = new double[7];
+		for (i = 0; i < 7; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] > a[max_i])
 			{
 				max_i = i;
@@ -51,36 +49,22 @@ class Level3
     public static void T5()
     {
         WriteLine("Level3 Test5:");
-		int n, i, j, min_i = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[(n + 1) / 2];
-		for (i = 0; i < n; i++)
-		{
-			a[i] = ToDouble(ReadLine());
-			if (i % 2 == 0)
-			{
-				b[i / 2] = a[i];
-			}
-		}
-		for (i = 0; i < (n + 1) / 2 - 1; i++)
+		int i, j, min_i = 0;
+		double[] a = new double[7] {1, 543, 23, 54, 18, 91, 21};
+		for (i = 0; i < 5; i += 2)
 		{
 			min_i = i;
-			for (j = i + 1; j < (n + 1) / 2; j++)
+			for (j = i + 2; j < 7; j += 2)
 			{
-				if (b[j] < b[min_i])
+				if (a[j] < a[min_i])
 					min_i = j;
 			}
-			(b[i], b[min_i]) = (b[min_i], b[i]);
+			(a[i], a[min_i]) = (a[min_i], a[i]);
 		}
         WriteLine();
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 7; i++)
 		{
-			if (i % 2 == 0)
-			{
-				WriteLine(b[i / 2]);
-			}
-			else
-				WriteLine(a[i]);
+			WriteLine(a[i]);
 		}
     }
     public static void T6()
@@ -98,52 +82,30 @@ class Level3
     public static void T8()
     {
         WriteLine("Level3 Test8:");
-		int n, i, j, k = 0, max_i = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n];
-		for (i = 0; i < n; i++)
-		{
-			a[i] = ToDouble(ReadLine());
-			if (a[i] < 0)
-			{
-				b[k] = a[i];
-				k++;
-			}
-		}
-		for (i = 0; i < k - 1; i++)
+		int i, j, max_i = 0;
+		double[] a = new double[9] {1, 23, -1, 4, -51, -2, -4, 2, -6};
+		for (i = 0; i < 8; i++)
 		{
 			max_i = i;
-			for (j = i + 1; j < k; j++)
+			for (j = i + 1; j < 9; j++)
 			{
-				if (b[j] > b[max_i])
+				if (a[j] > a[max_i] && a[i] < 0 && a[j] < 0)
 					max_i = j;
 			}
-			(b[max_i], b[i]) = (b[i], b[max_i]);
+			(a[i], a[max_i]) = (a[max_i], a[i]);
 		}
-		k = 0;
-        WriteLine();
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 9; i++)
 		{
-			if (a[i] <= 0)
-			{
-				a[i] = b[k];
-				k++;
-			}
 			WriteLine(a[i]);
 		}
     }
     public static void T9()
     {
         WriteLine("Level3 Test9:");
-		int n, i, curr_d, curr_a, best_d, best_a;
-		n = ToInt32(ReadLine());
+		int i, curr_d, curr_a, best_d, best_a;
 		curr_d = curr_a = best_a = best_d = 1;
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
-		{
-			a[i] = ToDouble(ReadLine());
-		}
-		for (i = 0; i < n - 1; i++)
+		double[] a = new double[10] {1, 2, 3, 2, 1, 0, 1, 2, 3, 4};
+		for (i = 0; i < 9; i++)
 		{
 			if (curr_a > best_a)
 			{
@@ -202,60 +164,47 @@ class Level3
     {
         WriteLine("Level3 Test12:");
 		int i, c = 0, j = 0;
-		double[] a = new double[12], b;
-		for (i = 0; i < 12; i++)
+		double[] a = new double[12] { -1, 2, -3, 4, -5, -6, -7, 8, 9, 10, -11, -12 };
+		for (i = 0; i < 12 - c; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] < 0)
 			{
 				c++;
+				for (j = i; j < 11 - c; j++)
+				{
+					a[j] = a[j + 1];
+				}
+				i--;
 			}
+		}
+		for (i = 0; i < 12 - c; i++)
+		{
+			WriteLine(a[i]);
 		}
         WriteLine();
-		b = new double[12 - c];
-		for (i = 0; i < 12; i++)
-		{
-			if (a[i] >= 0)
-			{
-				b[j] = a[i];
-				WriteLine(b[j]);
-				j++;
-			}
-		}
     }
     public static void T13()
     {
         WriteLine("Level3 Test13:");
-		int i, n, j, k = 0;
-		bool not_found = true;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n];
-		for (i = 0; i < n; i++)
+		int i, j, k = 0;
+		double[] a = new double[8] {1, 1, 3, 4, 5, 5, 5, 7};
+		for (i = 0; i < 7 - k; i++)
 		{
-			a[i] = ToDouble(ReadLine());
-		}
-		for (i = 0; i < n; i++)
-		{
-			for (j = 0; j < n; j++)
+			for (j = i; j < 8 - k; j++)
 			{
-				if (b[j] == a[i])
+				if (a[j] == a[i])
 				{
-					not_found = false;
-					break;
+					k++;
+					for (int o = j; o < 8 - k; o++)
+					{
+						a[o] = a[o + 1];
+					}
 				}
 			}
-			if (not_found)
-			{
-				b[k] = a[i];
-				k++;
-			}
-			not_found = true;
 		}
-		double[] c = new double[k];
-		for (i = 0; i < k; i++)
+		for (i = 0; i < 8 - k; i++)
 		{
-			c[i] = b[i];
-			WriteLine(c[i]);
+			WriteLine(a[i]);
 		}
         WriteLine();
     }

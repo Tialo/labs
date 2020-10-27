@@ -6,16 +6,10 @@ class Additional
     public static void T11()
     {
         WriteLine("Additional Test11:");
-		int n, i, i1 = 0, i2;
+		int i, i1 = 0, i2 = 10;
 		double x;
 		bool fail = false;
-		n = ToInt32(ReadLine());
-		i2 = n;
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
-		{
-			a[i] = ToDouble(ReadLine());
-		}
+		double[] a = new double[10] {1, 3, 5, 7, 8, 10, 11, 13, 14, 15};
 		x = ToDouble(ReadLine());
 		i = (i1 + i2) / 2;
 		while (a[i] != x)
@@ -45,27 +39,18 @@ class Additional
     public static void T12()
     {
         WriteLine("Additional Test12:");
-		int n, i;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n], c = new double[2 * n];
-		for (i = 0; i < n; i++)
+		int i;
+		double[] a = new double[5] {1, 2, 3, 4, 5}, b = new double[5] {-1, -2, -3, -4 , -5}, c = new double[10];
+		for (i = 0; i < 5; i++)
 		{
-			a[i] = ToDouble(ReadLine());
+			c[2 * i] = a[i];
 		}
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 5; i++)
 		{
-			b[i] = ToDouble(ReadLine());
+			c[2 * i + 1] = b[i];
 		}
-		for (i = 0; i < 2 * n; i++)
+		for (i = 0; i < 10; i++)
 		{
-			if (i % 2 == 0)
-			{
-				c[i] = a[i / 2];
-			}
-			else
-			{
-				c[i] = b[i / 2];
-			}
 			WriteLine(c[i]);
 		}
         WriteLine();
@@ -73,27 +58,16 @@ class Additional
     public static void T13()
     {
         WriteLine("Additional Test13:");
-		int n, m, i = 0, j = 0, f = 0;
-		n = ToInt32(ReadLine());
-		m = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[m], c = new double[m + n];
-		for (i = 0; i < n; i++)
+		int i = 0, j = 0, f = 0;
+		double[] a = new double[4] {1, 56, 188, 288}, b = new double[5] {2, 3, 4, 199, 311}, c = new double[9];
+		while (i + j < 9)
 		{
-			a[i] = ToDouble(ReadLine());
-		}
-		for (j = 0; j < m; j++)
-		{
-			b[j] = ToDouble(ReadLine());
-		}
-		i = j = 0;
-		while (i + j < m + n)
-		{
-			if (i >= n)
+			if (i >= 4)
 			{
 				c[f] = b[j];
 				j++;
 			}
-			else if (j >= m)
+			else if (j >= 5)
 			{
 				c[f] = a[i];
 				i++;
@@ -114,7 +88,7 @@ class Additional
 			f++;
 		}
         WriteLine();
-		for (i = 0; i < m + n; i++)
+		for (i = 0; i < 9; i++)
 		{
 			WriteLine(c[i]);
 		}
@@ -122,19 +96,14 @@ class Additional
     public static void T14()
     {
         WriteLine("Additional Test14:");
-		int n, i;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
+		int i;
+		double[] a = new double[7] {1, 2, 3, 4, 5, 6, 7};
+		for (i = 0; i < 7 / 2; i++)
 		{
-			a[i] = ToDouble(ReadLine());
-		}
-		for (i = 0; i < n / 2; i++)
-		{
-			(a[i], a[n - i - 1]) = (a[n - i - 1], a[i]);
+			(a[i], a[7 - i - 1]) = (a[7 - i - 1], a[i]);
 		}
         WriteLine();
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 7; i++)
 		{
 			WriteLine(a[i]);
 		}
@@ -142,16 +111,14 @@ class Additional
     public static void T15()
     {
         WriteLine("Additional Test15:");
-		int i, n, m;
-		n = ToInt32(ReadLine());
-		m = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
+		int i, m = 2;
+		double[] a = new double[7] {0, 1, 2, 3, 4, 5, 6};
+		for (i = 0; i < 7; i++)
 		{
-			a[(i + m) % n] = ToDouble(ReadLine());
+			a[(i + m) % 7] = a[i];
 		}
         WriteLine();
-		for (i = 0; i < n; i++)
+		for (i = 0; i < 7; i++)
 			WriteLine(a[i]);
     }
 }

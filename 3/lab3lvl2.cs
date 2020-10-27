@@ -31,12 +31,10 @@ class Level2
     public static void T5()
     {
         WriteLine("Level2 Test5:");
-		int n, max_i = 0, min_i = 0, i, c = 0, j = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
-		{
-			a[i] = ToDouble(ReadLine());
+		int max_i = 0, min_i = 0, i, c = 0, j = 0;
+		double[] a = new double[7] {5, 10, -1, 2, -4, -20, 3};
+		for (i = 0; i < 7; i++)
+		{		
 			if (a[i] > a[max_i])
 				max_i = i;
 			if (a[i] < a[min_i])
@@ -64,38 +62,33 @@ class Level2
     public static void T6()
     {
         WriteLine("Level2 Test6:");
-		int n, i = 0, ind = 0, j = 0;
+		int i = 0, ind = 0;
 		double P, s = 0, d;
-		n = ToInt32(ReadLine());
 		P = ToDouble(ReadLine());
-		double[] a = new double[n];
-		for (; i < n; i++)
+		double[] a = new double[9] {24, 49, 16, 37, 39, 78, 41, 91, -1};
+		for (; i < 8; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			s += a[i];
 		}
-		s /= n;
-		d = a[0];
-		for (i = 0; i < n; i++)
+		s /= 8;
+		d = Abs(s - a[0]);
+		for (i = 0; i < 8; i++)
 		{
-			if (Abs(a[i] - s) < d)
+			if (Abs(a[i] - s) <= d)
 			{
-				ind = i;
+				ind = i + 1;
 				d = Abs(a[i] - s);
 			}
 		}
-		double[] b = new double[n + 1];
 		WriteLine("----------------------------");
-		for (i = 0; i < n; j++)
+		for (i = 8; i > ind; i--)
 		{
-			if (j == ind + 1)
-				b[j] = P;
-			else
-			{
-				b[j] = a[i];
-				i++;
-			}
-			WriteLine(b[j]);
+			a[i] = a[i - 1];
+		}
+		a[ind] = P;
+		for (i = 0; i < 9; i++)
+		{
+			WriteLine(a[i]);
 		}		
         WriteLine();
     }
@@ -115,12 +108,10 @@ class Level2
     {
         WriteLine("Level2 Test9:");
 		double s = 0;
-		int n, i, min_i = 0, max_i = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
+		int i, min_i = 0, max_i = 0;
+		double[] a = new double[8] {412, 10, 21, 1245, 21, 45, 8, 543};
+		for (i = 0; i < 8; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] < a[min_i])
 				min_i = i;
 			if (a[i] > a[max_i])
@@ -138,82 +129,74 @@ class Level2
     public static void T10()
     {
         WriteLine("Level2 Test10:");
-		int n, i, ind = 0, j = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n - 1];
-		for (i = 0; i < n; i++)
+		int i, ind = 0;
+		double[] a = new double[9] {-1, 16, -5, 5, 9, -24, 24, 2, 18};
+		for (i = 0; i < 9; i++)
 		{
-			a[i] = ToDouble(ReadLine());
-			if (a[i] < a[ind])
+			if (a[i] > 0)
+			{
+				ind = i;
+				break;
+			}
+		}
+		for (i = 0; i < 9; i++)
+		{
+			if (a[i] < a[ind] && a[i] > 0)
 				ind = i;
 		}
-		for (i = 0; i < n; j++, i++)
+		for (i = ind; i < 8; i++)
 		{
-			if (i == ind)
-			{
-				i++;
-				b[j] = a[i];
-			}
-			b[j] = a[i];
-			WriteLine(b[j]);
+			a[i] = a[i + 1];
+		}
+		for (i = 0; i < 8; i++)
+		{
+			WriteLine(a[i]);
 		}
         WriteLine();
     }
     public static void T11()
     {
         WriteLine("Level2 Test11:");
-		int n, i, ind = 0;
+		int i, ind = 0;
 		double P;
-		n = ToInt32(ReadLine());
 		P = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[n + 1];
-		for (i = 0; i < n; i++)
+		double[] a = new double[9] {-7, -2, 4, 12, -5, -4, 14, -99, 0};
+		for (i = 0; i < 8; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (a[i] > 0)
-				ind = i;
+				ind = i + 1;
 		}
-		for (i = 0; i <= n; i++)
+		for (i = 8; i > ind; i--)
 		{
-			if (i < ind + 1)
-			{
-				b[i] = a[i];
-			}
-			else if (i == ind + 1)
-			{
-				b[i] = P;
-			}
-			else
-			{
-				b[i] = a[i - 1];
-			}
-			WriteLine(b[i]);
+			a[i] = a[i - 1];
+		}
+		a[ind] = P;
+		for (i = 0; i < 9; i++)
+		{
+			WriteLine(a[i]);
 		}
         WriteLine();
     }
     public static void T12()
     {
         WriteLine("Level2 Test12:");
-		int n, i, ind = -1, max_i = 0;
+		int i, ind = -1, max_i = 0;
 		double s = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
+		double[] a = new double[9] {2, 3, -9, 41, -6, 51, 2, -4, 28};
+		for (i = 0; i < 9; i++)
 		{
-			a[i] = ToDouble(ReadLine());
 			if (ind == -1 && a[i] < 0)
 				ind = i;
 			if (a[max_i] < a[i])
 				max_i = i;
 		}
-		for (i = max_i + 1; i < n; i++)
+		for (i = max_i + 1; i < 9; i++)
 		{
 			s += a[i];
 		}
-		for (i = 0; i < n; i++)
+		a[ind] = s;
+		for (i = 0; i < 9; i++)
 		{
-			if (i == ind)
-				a[i] = s;
 			WriteLine(a[i]);
 		}
         WriteLine();
@@ -221,19 +204,16 @@ class Level2
     public static void T13()
     {
         WriteLine("Level2 Test13:");
-		int n, i, ind = 0;
-		n = ToInt32(ReadLine());
-		double[] a = new double[n];
-		for (i = 0; i < n; i++)
+		int i, ind = 0;
+		double[] a = new double[6] {4, 12, 9, 124, 2, -1};
+		for (i = 0; i < 6; i += 2)
 		{
-			a[i] = ToDouble(ReadLine());
-			if (i % 2 == 0 && a[i] > a[ind])
+			if (a[i] > a[ind])
 				ind = i;
 		}
-		for (i = 0; i < n; i++)
+		a[ind] = ind;
+		for (i = 0; i < 6; i++)
 		{
-			if (i == ind)
-				a[i] = ind;
 			WriteLine(a[i]);
 		}
         WriteLine();
@@ -247,24 +227,23 @@ class Level2
     public static void T15()
     {
         WriteLine("Level2 Test15:");
-		int n, m, k, i;
-		n = ToInt32(ReadLine());
-		m = ToInt32(ReadLine());
-		k = ToInt32(ReadLine());
-		double[] a = new double[n], b = new double[m], c = new double[n + m];
-		for (i = 0; i < n; i++)
-			a[i] = ToDouble(ReadLine());
-		for (i = 0; i < m; i++)
-			b[i] = ToDouble(ReadLine());
-		for (i = 0; i < n + m; i++)
+		int k, i;
+		k = 3;
+		double[] a = new double[7] {1, 2, 3, 4, 5, 6, 7}, b = new double[15] {12, 534, 12, 421, 41, 3, 534, 551, 0, 0, 0, 0, 0, 0, 0};
+		for (int j = 0; j < 7; j++)
 		{
-			if (i < k)
-				c[i] = a[i];
-			else if (i >= k && i < k + m)
-				c[i] = b[i - k];
-			else
-				c[i] = a[i - m];
-			WriteLine(c[i]);
+			for (i = 14; i >= k; i--)
+			{
+				b[i] = b[i - 1];
+			}
+		}
+		for (i = k; i < k + 7; i++)
+		{
+			b[i] = a[i - k];
+		}
+		for (i = 0; i < 15; i++)
+		{
+			WriteLine(b[i]);
 		}
         WriteLine();
     }
