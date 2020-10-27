@@ -25,19 +25,19 @@ class Level3
     public static void T4()
     {
         WriteLine("Level3 Test4:");
-		double r1, r2, x, y;
-		string input1, input2;
+		double x = 0, y, r1, r2;
 		r1 = ToDouble(ReadLine());
 		r2 = ToDouble(ReadLine());
-		input1 = ReadLine();
-		while (input1 != "end")
+		do
 		{
-			input2 = ReadLine();
-			x = ToDouble(input1);
-			y = ToDouble(input2);
+			x = ToDouble(ReadLine());
+			if (x == -123456789)
+			{
+				break;
+			}
+			y = ToDouble(ReadLine());
 			WriteLine(r1 * r1 <= x * x + y * y && x * x + y * y <= r2 * r2);
-			input1 = ReadLine();
-		}
+		} while (x != -123456789);
         WriteLine();
     }
     public static void T5()
@@ -79,26 +79,37 @@ class Level3
     public static void T11()
     {
         WriteLine("Level3 Test11:");
-		int i, n, count = 0, mark1, mark2, mark3, mark4, num = 0;
-		double s = 0;
-		n = ToInt32(ReadLine());
-		for (i = 0; i < n; i++)
+		int i, num = 0, count = 0;
+		bool bad;
+		double s = 0, mid, mark = 1;
+		do
 		{
-			mark1 = ToInt32(ReadLine());
-			mark2 = ToInt32(ReadLine());
-			mark3 = ToInt32(ReadLine());
-			mark4 = ToInt32(ReadLine());
-			if (mark1 == 2 || mark2 == 2 || mark3 == 2 || mark4 == 2)
+			bad = false;
+			mid = 0;
+			for (i = 0; i < 4; i++)
+			{
+				mark = ToInt32(ReadLine());
+				if (mark == 0)
+				{
+					break;
+				}
+				if (mark == 2)
+				{
+					bad = true;
+				}
+				mid += mark;
+			}
+			if (bad)
 			{
 				num++;
 			}
 			else
 			{
-				s += mark1 + mark2 + mark3 + mark4;
+				s += mid;
 				count += 4;
-			}
-		}
-        WriteLine($"{num}\t{(s) / (count)}");
+			} 
+		} while (mark != 0);
+        WriteLine($"{num}\t{s / (count - 4)}");
     }
     public static void T12()
     {
