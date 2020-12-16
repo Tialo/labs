@@ -1,0 +1,13 @@
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.exe
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.deps.json
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.runtimeconfig.json
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.runtimeconfig.dev.json
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.dll
+C:\Users\tialo\Desktop\c#\labs\6\bin\Debug\netcoreapp3.1\6.pdb
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.csprojAssemblyReference.cache
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.AssemblyInfoInputs.cache
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.AssemblyInfo.cs
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.csproj.CoreCompileInputs.cache
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.dll
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.pdb
+C:\Users\tialo\Desktop\c#\labs\6\obj\Debug\netcoreapp3.1\6.genruntimeconfig.cache
