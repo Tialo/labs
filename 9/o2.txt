@@ -1,0 +1,7 @@
+Bat	Score	5.00	Scholarship	15000
+Kof	Score	5.00	Scholarship	15000
+Fon	Score	4.67	Scholarship	15000
+Fan	Score	4.67	Scholarship	15000
+Gol	Score	4.67	Scholarship	15000
+Dan	Score	4.33	Scholarship	2000
+Fin	Score	4.00	Scholarship	2000
